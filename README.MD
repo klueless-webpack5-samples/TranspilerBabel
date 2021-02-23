@@ -1,14 +1,12 @@
 # Transpiler Babel
 
-> Transpile with Babel using Webpack 5
+> Transpiler Babel using Webpack 5
 
 As a SPA Developer, I want use the latest EcmaScript features, so that I can have a productive coding experience
 
-This code is based off this article [Why you don’t need Babel](https://blog.logrocket.com/why-you-dont-need-babel/)
-
 ## Before and After
 
-Before and after for Transpile Babel using Webpack 5
+Before and after for Transpiler Babel using Webpack 5
 
 <table>
 <tr>
@@ -31,34 +29,36 @@ Before and after for Transpile Babel using Webpack 5
 
 ## Development
 
-Run VSCode Live Server on index.html or open in your browser
+Work through the following commands
 
 ```bash
 # cd [YouCustomDevFolder]
-git clone git@github.com:klueless-webpack5-samples/TranspilerBabel.git && cd TranspilerBabel
+git clone git@github.com:klueless-html-samples/TranspilerBabel.git && cd TranspilerBabel
 
-npm install
+# Run transpiler directly or via webpack
+# if you use the transpiler directly, the code will be quite readable
+# if you run via webpack, it is currently compressed and minified (hard to read)
 
-# Run the transpiler
+# Run the transpiler directly (best option for test/debugging)
 npm run transpile
-# or
+# or command line call
 npx babel src --out-dir dist --presets=@babel/env
-
-# Run the code
-npm run execute
-# or
-node dist/test.js
+# or 
+# Run the transpiler via webpack (best option for development)
+npm run build
 
 # Play around with the queries inside browserlists to see different transpile outputs
 edit .browserslistrc
-```
 
-## Code Setup
+# Run the transpiler
 
-```bash
-# Setup Transpilers for EcmaScript support
-npm install --save-dev @babel/core @babel/cli @babel/preset-env
-# npm install --save @babel/polyfill
+# Run via package
+npm run execute
+# or via command line call
+node dist/index.js
+
+# Run the code
+node dist/index.js
 ```
 
 ## License
