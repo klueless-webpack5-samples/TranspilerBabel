@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "transpile": "npx babel src --out-dir dist --presets=@babel/env",
-    "run": "node dist/test.js"
+    "execute": "node dist/test.js"
   },
   "keywords": [],
   "author": "David Cruwys <david@ideasmen.com.au> (https://appydave.com/)",
