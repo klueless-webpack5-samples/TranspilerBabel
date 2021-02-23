@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "transpile": "npx babel src --out-dir dist --presets=@babel/env",
-    "execute": "node dist/test.js"
+    "execute": "node dist/test.js",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "David Cruwys <david@ideasmen.com.au> (https://appydave.com/)",

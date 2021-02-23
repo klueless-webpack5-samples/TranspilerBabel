@@ -44,7 +44,7 @@ npm run transpile
 # or
 npx babel src --out-dir dist --presets=@babel/env
 
-# Run the code
+# Run the transpiled code
 npm run execute
 # or
 node dist/test.js
