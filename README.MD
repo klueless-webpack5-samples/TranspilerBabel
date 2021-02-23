@@ -1,14 +1,12 @@
 # Transpiler Babel
 
-> Transpile with Babel using Webpack 5
+> Transpiler Babel using Webpack 5
 
 As a SPA Developer, I want use the latest EcmaScript features, so that I can have a productive coding experience
 
-This code is based off this article [Why you don’t need Babel](https://blog.logrocket.com/why-you-dont-need-babel/)
-
 ## Before and After
 
-Before and after for Transpile Babel using Webpack 5
+Before and after for Transpiler Babel using Webpack 5
 
 <table>
 <tr>
@@ -35,30 +33,14 @@ Run VSCode Live Server on index.html or open in your browser
 
 ```bash
 # cd [YouCustomDevFolder]
-git clone git@github.com:klueless-webpack5-samples/TranspilerBabel.git && cd TranspilerBabel
+git clone git@github.com:klueless-html-samples/TranspilerBabel.git && cd TranspilerBabel
 
 npm install
 
-# Run the transpiler
-npm run transpile
-# or
-npx babel src --out-dir dist --presets=@babel/env
-
-# Run the transpiled code
-npm run execute
-# or
-node dist/test.js
-
-# Play around with the queries inside browserlists to see different transpile outputs
-edit .browserslistrc
-```
-
-## Code Setup
-
-```bash
-# Setup Transpilers for EcmaScript support
-npm install --save-dev @babel/core @babel/cli @babel/preset-env
-# npm install --save @babel/polyfill
+# use a command to open index.html in browser.
+# this is how I setup my Mac alias for chrome
+# alias chrome="open -a Google\ Chrome"
+chrome index.html
 ```
 
 ## License
