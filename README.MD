@@ -49,6 +49,8 @@ npm run execute
 # or
 node dist/test.js
 
+# Play around with the queries inside browserlists to see different transpile outputs
+edit .browserslistrc
 ```
 
 ## Code Setup
