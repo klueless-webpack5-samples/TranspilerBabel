@@ -29,18 +29,36 @@ Before and after for Transpiler Babel using Webpack 5
 
 ## Development
 
-Run VSCode Live Server on index.html or open in your browser
+Work through the following commands
 
 ```bash
 # cd [YouCustomDevFolder]
 git clone git@github.com:klueless-html-samples/TranspilerBabel.git && cd TranspilerBabel
 
-npm install
+# Run transpiler directly or via webpack
+# if you use the transpiler directly, the code will be quite readable
+# if you run via webpack, it is currently compressed and minified (hard to read)
 
-# use a command to open index.html in browser.
-# this is how I setup my Mac alias for chrome
-# alias chrome="open -a Google\ Chrome"
-chrome index.html
+# Run the transpiler directly (best option for test/debugging)
+npm run transpile
+# or command line call
+npx babel src --out-dir dist --presets=@babel/env
+# or 
+# Run the transpiler via webpack (best option for development)
+npm run build
+
+# Play around with the queries inside browserlists to see different transpile outputs
+edit .browserslistrc
+
+# Run the transpiler
+
+# Run via package
+npm run execute
+# or via command line call
+node dist/index.js
+
+# Run the code
+node dist/index.js
 ```
 
 ## License
