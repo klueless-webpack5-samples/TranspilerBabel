@@ -1,0 +1,21 @@
+{
+  "name": "transpiler_babel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "transpile": "npx babel src --out-dir dist --presets=@babel/env",
+    "run": "node dist/test.js"
+  },
+  "keywords": [],
+  "author": "David Cruwys <david@ideasmen.com.au> (https://appydave.com/)",
+  "license": "MIT",
+  "description": "Transpiler Babel using Webpack 5",
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.0",
+    "@babel/preset-env": "^7.13.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
